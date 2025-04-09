@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+
+    <!-- Text input field -->
+    <EditText
+        android:id="@+id/edt_input"
+        android:layout_width="380dp"
+        android:layout_height="68dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter text for QR code" />
+
+    <!-- Generate QR Code button -->
+    <Button
+        android:id="@+id/btn_generate_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate QR Code"
+        android:layout_below="@id/edt_input"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Save QR Code button (Placed next to Generate button) -->
+
+
+    <Button
+        android:id="@+id/btnSaveQRCode"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_input"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/btn_generate_qr"
+        android:text="Save QR Code"
+        android:visibility="invisible" />
+
+    <!-- QR Code ImageView (Centered below buttons) -->
+
+    <ImageView
+        android:id="@+id/img_qrcode"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/edt_input"
+        android:layout_marginTop="158dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
